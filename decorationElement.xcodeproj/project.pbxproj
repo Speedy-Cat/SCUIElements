@@ -14,6 +14,8 @@
 		498170761BA2BAAD000A8926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498170751BA2BAAD000A8926 /* Images.xcassets */; };
 		498170791BA2BAAD000A8926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498170771BA2BAAD000A8926 /* LaunchScreen.xib */; };
 		498170851BA2BAAD000A8926 /* decorationElementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170841BA2BAAD000A8926 /* decorationElementTests.m */; };
+		498170971BA2E271000A8926 /* SCHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170961BA2E271000A8926 /* SCHomeButton.m */; };
+		4981709A1BA2FB42000A8926 /* SCCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170991BA2FB42000A8926 /* SCCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		4981707E1BA2BAAD000A8926 /* decorationElementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = decorationElementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498170831BA2BAAD000A8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498170841BA2BAAD000A8926 /* decorationElementTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = decorationElementTests.m; sourceTree = "<group>"; };
+		498170951BA2E271000A8926 /* SCHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHomeButton.h; sourceTree = "<group>"; };
+		498170961BA2E271000A8926 /* SCHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHomeButton.m; sourceTree = "<group>"; };
+		498170981BA2FB42000A8926 /* SCCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCheckBox.h; sourceTree = "<group>"; };
+		498170991BA2FB42000A8926 /* SCCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCheckBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				498170751BA2BAAD000A8926 /* Images.xcassets */,
 				498170771BA2BAAD000A8926 /* LaunchScreen.xib */,
 				498170681BA2BAAD000A8926 /* Supporting Files */,
+				498170951BA2E271000A8926 /* SCHomeButton.h */,
+				498170961BA2E271000A8926 /* SCHomeButton.m */,
+				498170981BA2FB42000A8926 /* SCCheckBox.h */,
+				498170991BA2FB42000A8926 /* SCCheckBox.m */,
 			);
 			path = decorationElement;
 			sourceTree = "<group>";
@@ -219,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498170971BA2E271000A8926 /* SCHomeButton.m in Sources */,
+				4981709A1BA2FB42000A8926 /* SCCheckBox.m in Sources */,
 				498170711BA2BAAD000A8926 /* ViewController.m in Sources */,
 				4981706E1BA2BAAD000A8926 /* AppDelegate.m in Sources */,
 				4981706B1BA2BAAD000A8926 /* main.m in Sources */,
@@ -418,6 +430,7 @@
 				4981708A1BA2BAAD000A8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4981708B1BA2BAAD000A8926 /* Build configuration list for PBXNativeTarget "decorationElementTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				4981708D1BA2BAAD000A8926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
