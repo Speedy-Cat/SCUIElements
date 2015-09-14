@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SCHomeButton.h"
 #import "SCCheckBox.h"
+#import "SCRadioButton.h"
 
 @interface ViewController ()
 
@@ -24,10 +25,12 @@
     [button setTitle:@"MY BUTTON TRES BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:button];
     
-    SCCheckBox *checkbox = [[SCCheckBox alloc] initWithPosition:CGPointMake(50,200)];
+    SCCheckBox *checkbox = [[SCCheckBox alloc] initWithFrame:CGRectMake(50, 200, 200, 26)];
     [self.view addSubview:checkbox];
     
-    self.view.backgroundColor = [UIColor redColor];
+    SCRadioButton *radioButton = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 250, 200, 26)];
+    [self.view addSubview:radioButton];
+    
 }
 
 - (void)didReceiveMemoryWarning {
