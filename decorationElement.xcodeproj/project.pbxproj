@@ -18,6 +18,7 @@
 		4981709A1BA2FB42000A8926 /* SCCheckBoxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170991BA2FB42000A8926 /* SCCheckBoxButton.m */; };
 		49842BEB1BA6C7DB001D6672 /* SCRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BEA1BA6C7DB001D6672 /* SCRadioButton.m */; };
 		49842BEE1BA6D4CE001D6672 /* SCRadioButtonCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BED1BA6D4CE001D6672 /* SCRadioButtonCollection.m */; };
+		49842BF11BA6EEC8001D6672 /* _SCRadioCheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BF01BA6EEC8001D6672 /* _SCRadioCheckButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		49842BEA1BA6C7DB001D6672 /* SCRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRadioButton.m; sourceTree = "<group>"; };
 		49842BEC1BA6D4CE001D6672 /* SCRadioButtonCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRadioButtonCollection.h; sourceTree = "<group>"; };
 		49842BED1BA6D4CE001D6672 /* SCRadioButtonCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRadioButtonCollection.m; sourceTree = "<group>"; };
+		49842BEF1BA6EEC8001D6672 /* _SCRadioCheckButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SCRadioCheckButton.h; sourceTree = "<group>"; };
+		49842BF01BA6EEC8001D6672 /* _SCRadioCheckButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SCRadioCheckButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				498170681BA2BAAD000A8926 /* Supporting Files */,
 				498170951BA2E271000A8926 /* SCHomeButton.h */,
 				498170961BA2E271000A8926 /* SCHomeButton.m */,
+				49842BEF1BA6EEC8001D6672 /* _SCRadioCheckButton.h */,
+				49842BF01BA6EEC8001D6672 /* _SCRadioCheckButton.m */,
 				49842BE91BA6C7DB001D6672 /* SCRadioButton.h */,
 				49842BEA1BA6C7DB001D6672 /* SCRadioButton.m */,
 				498170981BA2FB42000A8926 /* SCCheckBoxButton.h */,
@@ -245,6 +250,7 @@
 				498170711BA2BAAD000A8926 /* ViewController.m in Sources */,
 				4981706E1BA2BAAD000A8926 /* AppDelegate.m in Sources */,
 				4981706B1BA2BAAD000A8926 /* main.m in Sources */,
+				49842BF11BA6EEC8001D6672 /* _SCRadioCheckButton.m in Sources */,
 				49842BEB1BA6C7DB001D6672 /* SCRadioButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

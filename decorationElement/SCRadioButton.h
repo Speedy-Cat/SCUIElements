@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "_SCRadioCheckButton.h"
 
 @protocol SCRadioButtonDelegate;
 
-@interface SCRadioButton : UIButton
+@interface SCRadioButton : _SCRadioCheckButton
 
 @property (nonatomic, weak) id<SCRadioButtonDelegate> delegate;
 

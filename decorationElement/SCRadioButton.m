@@ -11,70 +11,42 @@
 @interface SCRadioButton ()
 
 
-@property (nonatomic) BOOL isChecked;
-@property (nonatomic, strong) UIImageView *checkBoxImageView;
-@property (nonatomic, strong) UIImage *checkImg;
-@property (nonatomic, strong) UIImage *unCheckImg;
-
-
 @end
 
 @implementation SCRadioButton
 
 @synthesize selected = _selected;
+@synthesize checkBoxImageView = _checkBoxImageView;
 
--(instancetype)initWithFrame:(CGRect)frame
+
+-(void)setUp
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-        [self setTitleColor:[UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1.0] forState:UIControlStateNormal];
-        
-        
-        // set the checkbox Image view
-        [self addSubview:self.checkBoxImageView];
-        
-        // images
-        self.checkImg = [UIImage imageNamed:@"Checkmark"];
-        
-        // title
-        [self setTitle:@"Female" forState:UIControlStateNormal];
-        self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        
-        // insets
-        [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
-        
-        // touch event
-        [self addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        
-        // set selected for style
-        [self setSelected:self.selected];
-        
-    }
-    return self;
+    [super setUp];
+    
+    [self setTitleColor:[UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1.0] forState:UIControlStateNormal];
+    
+    // title
+    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    // insets
+    [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
+    
+
 }
 
 -(UIImageView *)checkBoxImageView
 {
-    if (!_checkBoxImageView) {
-        CGRect rect = CGRectMake(5, 4, 18, 18);
-        _checkBoxImageView = [[UIImageView alloc] initWithFrame:rect];
-        _checkBoxImageView.contentMode = UIViewContentModeCenter;
-        _checkBoxImageView.layer.cornerRadius = 9.0;
-        _checkBoxImageView.layer.masksToBounds = YES;
-    }
-    
+    _checkBoxImageView = [super checkBoxImageView];
+    _checkBoxImageView.layer.cornerRadius = 9.0;
+    _checkBoxImageView.layer.masksToBounds = YES;
+
     return _checkBoxImageView;
 }
 
+
 - (IBAction) buttonClicked: (id)sender
 {
-    if (self.selected) {
-        self.selected = NO;
-    }
-    else{
-        self.selected = YES;
-    }
+    [super buttonClicked:nil];
     
     if ([self.delegate respondsToSelector:@selector(radioButtonDidSelected:)]) {
         [self.delegate radioButtonDidSelected:self];
@@ -95,15 +67,6 @@
     _selected = selected;
 }
 
-- (void)setHighlighted:(BOOL)highlighted {
-    [super setHighlighted:highlighted];
-    if(self.highlighted) {
-        [self setAlpha:0.7];
-    }
-    else {
-        [self setAlpha:1.0];
-    }
-}
 
 
 @end

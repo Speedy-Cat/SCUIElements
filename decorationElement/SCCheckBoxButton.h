@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "_SCRadioCheckButton.h"
 
-@interface SCCheckBoxButton : UIButton
+@interface SCCheckBoxButton : _SCRadioCheckButton
 
 
 @end
