@@ -16,6 +16,7 @@
 		498170851BA2BAAD000A8926 /* decorationElementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170841BA2BAAD000A8926 /* decorationElementTests.m */; };
 		498170971BA2E271000A8926 /* SCHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170961BA2E271000A8926 /* SCHomeButton.m */; };
 		4981709A1BA2FB42000A8926 /* SCCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 498170991BA2FB42000A8926 /* SCCheckBox.m */; };
+		D50C869B1BA5EBEB00ED41B8 /* RadioButtonsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D50C869A1BA5EBEB00ED41B8 /* RadioButtonsSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		498170961BA2E271000A8926 /* SCHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHomeButton.m; sourceTree = "<group>"; };
 		498170981BA2FB42000A8926 /* SCCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCheckBox.h; sourceTree = "<group>"; };
 		498170991BA2FB42000A8926 /* SCCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCheckBox.m; sourceTree = "<group>"; };
+		D50C86991BA5EBEB00ED41B8 /* RadioButtonsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButtonsSet.h; sourceTree = "<group>"; };
+		D50C869A1BA5EBEB00ED41B8 /* RadioButtonsSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonsSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				498170961BA2E271000A8926 /* SCHomeButton.m */,
 				498170981BA2FB42000A8926 /* SCCheckBox.h */,
 				498170991BA2FB42000A8926 /* SCCheckBox.m */,
+				D50C86991BA5EBEB00ED41B8 /* RadioButtonsSet.h */,
+				D50C869A1BA5EBEB00ED41B8 /* RadioButtonsSet.m */,
 			);
 			path = decorationElement;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50C869B1BA5EBEB00ED41B8 /* RadioButtonsSet.m in Sources */,
 				498170971BA2E271000A8926 /* SCHomeButton.m in Sources */,
 				4981709A1BA2FB42000A8926 /* SCCheckBox.m in Sources */,
 				498170711BA2BAAD000A8926 /* ViewController.m in Sources */,
