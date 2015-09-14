@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCRadioButton.h"
 
 @interface ViewController : UIViewController
 

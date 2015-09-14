@@ -6,24 +6,21 @@
 //  Copyright (c) 2015 Adrian Ortuzar. All rights reserved.
 //
 
-#import "SCCheckBox.h"
+#import "SCCheckBoxButton.h"
 
-@interface SCCheckBox ()
-
+@interface SCCheckBoxButton ()
 
 @property (nonatomic) BOOL isChecked;
 @property (nonatomic, strong) UIImageView *checkBoxImageView;
 @property (nonatomic, strong) UIImage *checkImg;
 @property (nonatomic, strong) UIImage *unCheckImg;
 
-
 @end
 
-@implementation SCCheckBox
+@implementation SCCheckBoxButton
 
 @synthesize selected = _selected;
 
-//-(instancetype)initWithPosition:(CGPoint)position
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -47,10 +44,8 @@
         // touch event
         [self addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        // 
-        //[self buttonClicked:nil];
+        // set selected for style
         [self setSelected:self.selected];
-
     }
     return self;
 }
@@ -90,12 +85,15 @@
     _selected = selected;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+    if(self.highlighted) {
+        [self setAlpha:0.7];
+    }
+    else {
+        [self setAlpha:1.0];
+    }
 }
-*/
+
 
 @end

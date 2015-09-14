@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "SCHomeButton.h"
-#import "SCCheckBox.h"
+#import "SCCheckBoxButton.h"
 #import "SCRadioButton.h"
+#import "SCRadioButtonCollection.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) SCRadioButtonCollection *radioButtonCollection;
 
 @end
 
@@ -25,12 +28,23 @@
     [button setTitle:@"MY BUTTON TRES BUTTON" forState:UIControlStateNormal];
     [self.view addSubview:button];
     
-    SCCheckBox *checkbox = [[SCCheckBox alloc] initWithFrame:CGRectMake(50, 200, 200, 26)];
+    SCCheckBoxButton *checkbox = [[SCCheckBoxButton alloc] initWithFrame:CGRectMake(50, 200, 200, 26)];
     [self.view addSubview:checkbox];
     
     SCRadioButton *radioButton = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 250, 200, 26)];
+    [radioButton setTitle:@"Male" forState:UIControlStateNormal];
     [self.view addSubview:radioButton];
     
+    SCRadioButton *radioButton1 = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 300, 200, 26)];
+    [radioButton1 setTitle:@"Female" forState:UIControlStateNormal];
+    [self.view addSubview:radioButton1];
+    
+    SCRadioButton *radioButton2 = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 350, 200, 26)];
+    [radioButton2 setTitle:@"Trans" forState:UIControlStateNormal];
+    [self.view addSubview:radioButton2];
+    
+    NSSet *buttons = [[NSSet alloc] initWithArray:@[radioButton1, radioButton2, radioButton]];
+    self.radioButtonCollection = [[SCRadioButtonCollection alloc] initWithButtons:buttons];
 }
 
 - (void)didReceiveMemoryWarning {

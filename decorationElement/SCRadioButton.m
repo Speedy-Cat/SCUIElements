@@ -47,7 +47,7 @@
         // touch event
         [self addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        //
+        // set selected for style
         [self setSelected:self.selected];
         
     }
@@ -75,6 +75,10 @@
     else{
         self.selected = YES;
     }
+    
+    if ([self.delegate respondsToSelector:@selector(radioButtonDidSelected:)]) {
+        [self.delegate radioButtonDidSelected:self];
+    }
 }
 
 -(void)setSelected:(BOOL)selected
@@ -89,6 +93,16 @@
         self.checkBoxImageView.layer.borderWidth = 0.0f;
     }
     _selected = selected;
+}
+
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+    if(self.highlighted) {
+        [self setAlpha:0.7];
+    }
+    else {
+        [self setAlpha:1.0];
+    }
 }
 
 

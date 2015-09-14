@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCCheckBox : UIButton
+@interface SCCheckBoxButton : UIButton
 
 
 @end
