@@ -59,6 +59,7 @@
         self.checkBoxImageView.layer.borderColor = [UIColor orangeColor].CGColor;
         self.checkBoxImageView.backgroundColor = [UIColor whiteColor];
         self.checkBoxImageView.layer.borderWidth = 4.0f;
+
     }else{
         [self.checkBoxImageView setImage:nil];
         self.checkBoxImageView.backgroundColor = [UIColor grayColor];
@@ -67,6 +68,34 @@
     _selected = selected;
 }
 
-
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+    
+    if(self.highlighted) {
+        
+        if (!self.selected) {
+            self.checkBoxImageView.layer.borderColor = [UIColor grayColor].CGColor;
+            self.checkBoxImageView.backgroundColor = [UIColor whiteColor];
+            self.checkBoxImageView.layer.borderWidth = 4.0f;
+        }
+        else{
+//            [self.checkBoxImageView setImage:self.unCheckImg];
+        }
+        
+    }
+    else {
+        
+        if (!self.selected) {
+                    self.checkBoxImageView.layer.borderWidth = 0.0f;
+                                self.checkBoxImageView.backgroundColor = [UIColor grayColor];
+            //self.checkBoxImageView.backgroundColor = [UIColor grayColor];
+            
+        }
+        else{
+    //        [self.checkBoxImageView setImage:self.checkImg];
+        }
+        
+    }
+}
 
 @end

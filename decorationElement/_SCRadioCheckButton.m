@@ -68,10 +68,10 @@
 - (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
     if(self.highlighted) {
-        [self setAlpha:0.7];
+   //     [self setAlpha:0.7];
     }
     else {
-        [self setAlpha:1.0];
+     //   [self setAlpha:1.0];
     }
 }
 

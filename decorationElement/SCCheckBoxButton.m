@@ -81,10 +81,24 @@
 - (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
     if(self.highlighted) {
-        [self setAlpha:0.7];
+        
+        if (!self.selected) {
+            [self.checkBoxImageView setImage:self.checkImg];
+        }
+        else{
+            [self.checkBoxImageView setImage:self.unCheckImg];
+        }
+
     }
     else {
-        [self setAlpha:1.0];
+        
+        if (!self.selected) {
+            [self.checkBoxImageView setImage:self.unCheckImg];
+        }
+        else{
+            [self.checkBoxImageView setImage:self.checkImg];
+        }
+
     }
 }
 

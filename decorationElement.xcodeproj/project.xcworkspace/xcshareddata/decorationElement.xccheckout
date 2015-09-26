@@ -10,6 +10,8 @@
 	<string>decorationElement</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>10382494430D29F479F2D708B4B9B954DEFF7C02</key>
+		<string>https://github.com/plusnewmedia/IOSPlatform.git</string>
 		<key>B4278DF7EB6FAABBA3D351C46987BB675AF61EF4</key>
 		<string>https://github.com/Speedy-Cat/SCUIElements.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>decorationElement.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>10382494430D29F479F2D708B4B9B954DEFF7C02</key>
+		<string>../../../IOSPlatform</string>
 		<key>B4278DF7EB6FAABBA3D351C46987BB675AF61EF4</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>B4278DF7EB6FAABBA3D351C46987BB675AF61EF4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10382494430D29F479F2D708B4B9B954DEFF7C02</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOSPlatform</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
