@@ -19,6 +19,8 @@
 		49842BEB1BA6C7DB001D6672 /* SCRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BEA1BA6C7DB001D6672 /* SCRadioButton.m */; };
 		49842BEE1BA6D4CE001D6672 /* SCRadioButtonCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BED1BA6D4CE001D6672 /* SCRadioButtonCollection.m */; };
 		49842BF11BA6EEC8001D6672 /* _SCRadioCheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49842BF01BA6EEC8001D6672 /* _SCRadioCheckButton.m */; };
+		49A4617D1BBC1CBD0095EC16 /* HotPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4617A1BBC1CBD0095EC16 /* HotPointView.m */; };
+		49A4617E1BBC1CBD0095EC16 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4617C1BBC1CBD0095EC16 /* QCMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		49842BED1BA6D4CE001D6672 /* SCRadioButtonCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRadioButtonCollection.m; sourceTree = "<group>"; };
 		49842BEF1BA6EEC8001D6672 /* _SCRadioCheckButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SCRadioCheckButton.h; sourceTree = "<group>"; };
 		49842BF01BA6EEC8001D6672 /* _SCRadioCheckButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SCRadioCheckButton.m; sourceTree = "<group>"; };
+		49A461791BBC1CBD0095EC16 /* HotPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotPointView.h; sourceTree = "<group>"; };
+		49A4617A1BBC1CBD0095EC16 /* HotPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotPointView.m; sourceTree = "<group>"; };
+		49A4617B1BBC1CBD0095EC16 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		49A4617C1BBC1CBD0095EC16 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		498170671BA2BAAD000A8926 /* decorationElement */ = {
 			isa = PBXGroup;
 			children = (
+				49A461781BBC1CBD0095EC16 /* hotspotView */,
 				4981706C1BA2BAAD000A8926 /* AppDelegate.h */,
 				4981706D1BA2BAAD000A8926 /* AppDelegate.m */,
 				4981706F1BA2BAAD000A8926 /* ViewController.h */,
@@ -142,6 +149,17 @@
 				498170831BA2BAAD000A8926 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49A461781BBC1CBD0095EC16 /* hotspotView */ = {
+			isa = PBXGroup;
+			children = (
+				49A461791BBC1CBD0095EC16 /* HotPointView.h */,
+				49A4617A1BBC1CBD0095EC16 /* HotPointView.m */,
+				49A4617B1BBC1CBD0095EC16 /* QCMethod.h */,
+				49A4617C1BBC1CBD0095EC16 /* QCMethod.m */,
+			);
+			path = hotspotView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				498170971BA2E271000A8926 /* SCHomeButton.m in Sources */,
+				49A4617D1BBC1CBD0095EC16 /* HotPointView.m in Sources */,
 				49842BEE1BA6D4CE001D6672 /* SCRadioButtonCollection.m in Sources */,
 				4981709A1BA2FB42000A8926 /* SCCheckBoxButton.m in Sources */,
 				498170711BA2BAAD000A8926 /* ViewController.m in Sources */,
 				4981706E1BA2BAAD000A8926 /* AppDelegate.m in Sources */,
+				49A4617E1BBC1CBD0095EC16 /* QCMethod.m in Sources */,
 				4981706B1BA2BAAD000A8926 /* main.m in Sources */,
 				49842BF11BA6EEC8001D6672 /* _SCRadioCheckButton.m in Sources */,
 				49842BEB1BA6C7DB001D6672 /* SCRadioButton.m in Sources */,

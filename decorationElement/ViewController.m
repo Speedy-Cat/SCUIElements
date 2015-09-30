@@ -11,6 +11,7 @@
 #import "SCCheckBoxButton.h"
 #import "SCRadioButton.h"
 #import "SCRadioButtonCollection.h"
+#import "HotPointView.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor blackColor];
     
     SCHomeButton *button = [[SCHomeButton alloc] initWithFrame:CGRectMake(50, 50, 144, 64)];
     [button setTitle:@"MY BUTTON TRES BUTTON" forState:UIControlStateNormal];
@@ -45,6 +48,16 @@
     
     NSSet *buttons = [[NSSet alloc] initWithArray:@[radioButton1, radioButton2, radioButton]];
     self.radioButtonCollection = [[SCRadioButtonCollection alloc] initWithButtons:buttons];
+    
+    // hotView
+    HotPointView *hotpoint = [[HotPointView alloc] initWithFrame:CGRectMake(100, 450, 50, 50)];
+    [hotpoint startAllAnimations:nil];
+    [self.view addSubview:hotpoint];
+    
+    HotPointView *hotpoint1 = [[HotPointView alloc] initWithFrame:CGRectMake(30, 450, 30, 30)];
+    [hotpoint1 startAllAnimations:nil];
+    [self.view addSubview:hotpoint1];
+    
 }
 
 - (void)didReceiveMemoryWarning {
