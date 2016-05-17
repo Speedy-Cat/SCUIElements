@@ -9,7 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "_SCRadioCheckButton.h"
 
+@protocol SCCheckBoxButtonDelegate;
+
 @interface SCCheckBoxButton : _SCRadioCheckButton
 
+@property (nonatomic, weak) id<SCCheckBoxButtonDelegate> delegate;
+
+@end
+
+@protocol SCCheckBoxButtonDelegate <NSObject>
+
+- (void)checkBoxButtonDidSelected:(SCCheckBoxButton*)button;
 
 @end

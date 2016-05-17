@@ -11,6 +11,7 @@
 @implementation _SCRadioCheckButton
 
 @synthesize selected = _selected;
+@synthesize isCenter = _isCenter;
 
 
 -(id)initWithCoder:(NSCoder *)aDecoder
@@ -46,8 +47,7 @@
 -(UIImageView *)checkBoxImageView
 {
     if (!_checkBoxImageView) {
-        CGRect rect = CGRectMake(5, 4, 18, 18);
-        _checkBoxImageView = [[UIImageView alloc] initWithFrame:rect];
+        _checkBoxImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 4, 18, 18)];
         _checkBoxImageView.contentMode = UIViewContentModeCenter;
     }
     
@@ -68,11 +68,27 @@
 - (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
     if(self.highlighted) {
-   //     [self setAlpha:0.7];
+        [self setAlpha:0.7];
     }
     else {
-     //   [self setAlpha:1.0];
+        [self setAlpha:1.0];
     }
+}
+
+-(void)setIsCenter:(BOOL)isCenter
+{
+    _isCenter = isCenter;
+    
+    // set frame of checkBoxImageView
+    CGRect rect;
+    if (isCenter) {
+        rect = CGRectMake(CGRectGetWidth(self.frame)/2 - 18/2, CGRectGetHeight(self.frame)/2 - 18/2, 18, 18);
+    }else{
+        rect = CGRectMake(5, 4, 18, 18);
+    }
+    
+    self.checkBoxImageView.frame = rect;
+
 }
 
 @end

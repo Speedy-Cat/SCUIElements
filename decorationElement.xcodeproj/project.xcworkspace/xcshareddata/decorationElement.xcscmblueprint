@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B4278DF7EB6FAABBA3D351C46987BB675AF61EF4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "10382494430D29F479F2D708B4B9B954DEFF7C02" : 0,
+    "B4278DF7EB6FAABBA3D351C46987BB675AF61EF4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "523867AC-6C54-4F77-A01B-BF51D2A9E455",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "10382494430D29F479F2D708B4B9B954DEFF7C02" : "IOSPlatform",
+    "B4278DF7EB6FAABBA3D351C46987BB675AF61EF4" : "SCUIElements"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "decorationElement",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "decorationElement.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/plusnewmedia\/IOSPlatform.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10382494430D29F479F2D708B4B9B954DEFF7C02"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Speedy-Cat\/SCUIElements.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B4278DF7EB6FAABBA3D351C46987BB675AF61EF4"
+    }
+  ]
+}

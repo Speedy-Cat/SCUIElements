@@ -33,6 +33,11 @@
             button.selected = YES;
         }
     }
+    
+    if ([self.delegate respondsToSelector:@selector(radioButtonCollectionDidSelected:)]) {
+        [self.delegate radioButtonCollectionDidSelected:buttonSelected];
+    }
+    
 }
 
 @end

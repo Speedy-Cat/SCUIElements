@@ -23,7 +23,7 @@
 {
     [super setUp];
     
-    [self setTitleColor:[UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1.0] forState:UIControlStateNormal];
+    //[self setTitleColor:[UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1.0] forState:UIControlStateNormal];
     
     // title
     self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -56,10 +56,9 @@
 -(void)setSelected:(BOOL)selected
 {
     if (selected) {
-        self.checkBoxImageView.layer.borderColor = [UIColor orangeColor].CGColor;
+       // self.checkBoxImageView.layer.borderColor = [[PNMAppSettings sharedInstance] secondaryColor].CGColor;
         self.checkBoxImageView.backgroundColor = [UIColor whiteColor];
         self.checkBoxImageView.layer.borderWidth = 4.0f;
-
     }else{
         [self.checkBoxImageView setImage:nil];
         self.checkBoxImageView.backgroundColor = [UIColor grayColor];

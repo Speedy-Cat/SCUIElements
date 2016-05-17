@@ -7,6 +7,8 @@
 //
 
 #import "SCCheckBoxButton.h"
+//#import "PNMAppSettings.h"
+//#import "PNMColors.h"
 
 @interface SCCheckBoxButton ()
 
@@ -65,12 +67,21 @@
     return _checkBoxImageView;
 }
 
+- (IBAction) buttonClicked: (id)sender
+{
+    [super buttonClicked:nil];
+    
+    if ([self.delegate respondsToSelector:@selector(checkBoxButtonDidSelected:)]) {
+        [self.delegate checkBoxButtonDidSelected:self];
+    }
+}
+
 
 -(void)setSelected:(BOOL)selected
 {
     if (selected) {
         [self.checkBoxImageView setImage:self.checkImg];
-        self.checkBoxImageView.backgroundColor = [UIColor orangeColor];
+        //self.checkBoxImageView.backgroundColor = [[PNMAppSettings sharedInstance] secondaryColor];
     }else{
         [self.checkBoxImageView setImage:self.unCheckImg];
         self.checkBoxImageView.backgroundColor = [UIColor grayColor];

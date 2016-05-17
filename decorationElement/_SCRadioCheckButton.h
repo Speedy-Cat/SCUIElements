@@ -13,6 +13,9 @@
 @property (nonatomic, strong) UIImageView *checkBoxImageView;
 
 -(void)setUp;
+
 - (IBAction) buttonClicked:(id)sender;
+
+@property (nonatomic) BOOL isCenter;
 
 @end
