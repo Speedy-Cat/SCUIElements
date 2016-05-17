@@ -12,10 +12,12 @@
 
 @property (nonatomic, strong) UIImageView *checkBoxImageView;
 
+@property (nonatomic, strong) UIColor *highlightColor;
+
 -(void)setUp;
 
 - (IBAction) buttonClicked:(id)sender;
 
-@property (nonatomic) BOOL isCenter;
+
 
 @end

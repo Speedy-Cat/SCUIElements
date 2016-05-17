@@ -56,7 +56,9 @@
 -(void)setSelected:(BOOL)selected
 {
     if (selected) {
-       // self.checkBoxImageView.layer.borderColor = [[PNMAppSettings sharedInstance] secondaryColor].CGColor;
+        if (self.highlightColor) {
+            self.checkBoxImageView.layer.borderColor = self.highlightColor.CGColor;
+        }
         self.checkBoxImageView.backgroundColor = [UIColor whiteColor];
         self.checkBoxImageView.layer.borderWidth = 4.0f;
     }else{
@@ -71,27 +73,25 @@
     [super setHighlighted:highlighted];
     
     if(self.highlighted) {
-        
-        if (!self.selected) {
-            self.checkBoxImageView.layer.borderColor = [UIColor grayColor].CGColor;
-            self.checkBoxImageView.backgroundColor = [UIColor whiteColor];
-            self.checkBoxImageView.layer.borderWidth = 4.0f;
-        }
-        else{
-//            [self.checkBoxImageView setImage:self.unCheckImg];
+
+        self.checkBoxImageView.layer.borderWidth = 4.0f;
+        if (self.highlightColor) {
+            self.checkBoxImageView.layer.borderColor = self.highlightColor.CGColor;
         }
         
     }
     else {
         
         if (!self.selected) {
-                    self.checkBoxImageView.layer.borderWidth = 0.0f;
-                                self.checkBoxImageView.backgroundColor = [UIColor grayColor];
-            //self.checkBoxImageView.backgroundColor = [UIColor grayColor];
+            self.checkBoxImageView.layer.borderWidth = 0.0f;
+            self.checkBoxImageView.backgroundColor = [UIColor grayColor];
             
         }
         else{
-    //        [self.checkBoxImageView setImage:self.checkImg];
+            
+            if (self.highlightColor) {
+                self.checkBoxImageView.layer.borderColor = self.highlightColor.CGColor;
+            }
         }
         
     }

@@ -32,21 +32,21 @@
     [self.view addSubview:button];
     
     SCCheckBoxButton *checkbox = [[SCCheckBoxButton alloc] initWithFrame:CGRectMake(50, 200, 200, 26)];
+    checkbox.highlightColor = [UIColor greenColor];
     [self.view addSubview:checkbox];
     
     SCRadioButton *radioButton = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 250, 200, 26)];
+    radioButton.highlightColor = [UIColor blueColor];
     [radioButton setTitle:@"Male" forState:UIControlStateNormal];
     [self.view addSubview:radioButton];
     
     SCRadioButton *radioButton1 = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 300, 200, 26)];
+    radioButton1.highlightColor = [UIColor purpleColor];
     [radioButton1 setTitle:@"Female" forState:UIControlStateNormal];
     [self.view addSubview:radioButton1];
     
-    SCRadioButton *radioButton2 = [[SCRadioButton alloc] initWithFrame:CGRectMake(50, 350, 200, 26)];
-    [radioButton2 setTitle:@"Trans" forState:UIControlStateNormal];
-    [self.view addSubview:radioButton2];
     
-    NSSet *buttons = [[NSSet alloc] initWithArray:@[radioButton1, radioButton2, radioButton]];
+    NSSet *buttons = [[NSSet alloc] initWithArray:@[radioButton1, radioButton]];
     self.radioButtonCollection = [[SCRadioButtonCollection alloc] initWithButtons:buttons];
     
     // hotView
